@@ -1,0 +1,33 @@
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.env/
+memes/ 
+
+# Ignore Flask-specific files
+instance/
+*.sqlite3
+*.db
+
+# Ignore logs and temp files
+*.log
+*.bak
+*.swp
+.DS_Store
+
+# Ignore dependencies
+requirements.txt (optional if you generate dynamically)
+
+# Ignore face recognition dataset
+# memes_features.json
+memes/
+uploads/
+
+# Ignore system files
+.vscode/
+.idea/

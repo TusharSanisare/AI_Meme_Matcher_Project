@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Meme Matcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="container-main">
+        <h1 class="title">AI Meme Matcher</h1>
+        <h3>Find Your Meme Character Look A Like Using AI</h3>
+        <p>Upload your image and find your matching meme!</p>
+        <div class="main">
+          <div class="container">
+            <div class="image-preview">
+              <h3>Your are</h3>
+              <img
+                class="user-img"
+                id="selectedImage"
+                src="images/user-dark.jpg"
+                alt="Selected Image"
+              />
+            </div>
+            <div class="matched-meme">
+              <h3>Same as</h3>
+              <img
+                class="meme-img"
+                id="matchedMeme"
+                src="images/meme1.png"
+                alt="Matched Meme"
+              />
+            </div>
+          </div>
+          <div class="file-upload">
+            <label for="fileInput" class="custom-file-upload btn">
+              <span>Upload Image</span>
+            </label>
+            <input type="file" id="fileInput" accept="image/*" />
+          </div>
+          <button id="uploadButton" class="find-btn" style="display: none">
+            Match Meme
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h1 class="footer-title">AI Meme Matcher</h1>
+      <p class="footer-subtitle">
+        AI Meme Matcher is a personal project and not a production ready
+        product. <br />
+        It might take time to load because we are using external dependencies,
+        APIs, and free hosting. <br />
+        For more information contact using links below.
+      </p>
+      <p class="tushar">Created by Tushar ♡</p>
+      <div class="links">
+        <a
+          target="_blank"
+          class="link"
+          href="https://linkedin.com/in/tushar-sanisare"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          target="_blank"
+          class="link"
+          href="https://twitter.com/tushar_sanisare"
+        >
+          <i class="fa-brands fa-square-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          class="link"
+          href="https://github.com/TusharSanisare"
+        >
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a target="_blank" class="link" href="tsanisare@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+
+      <p class="Copyright">@2025 Copyright: AI Meme Matcher</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </body>
+</html>

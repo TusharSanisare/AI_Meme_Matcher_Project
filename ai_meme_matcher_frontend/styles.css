@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+}
+
+input[type="file"] {
+  display: none;
+} 
+
+
+@media screen and (orientation:portrait) { 
+  .body{
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container-main {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background:linear-gradient(to top, rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800));
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+
+      .title {
+        color: white;
+        font-size: 38px;
+        margin-top: 20px;
+        text-shadow: 0px 0px 30px rgb(204, 255, 0);
+      
+      }
+      h1 ,p, h3{
+        color: white;
+        text-shadow: 0px 0px 30px rgb(204, 255, 0);
+      }
+
+      .main {
+        width: 100%;
+        height: 70%;
+        margin-top: 30px;
+        text-align: center;
+        border-radius: 5px;
+
+        .container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .image-preview, .matched-meme {
+            width: 100%;
+            text-align: center;
+
+            img {
+              border: 1px solid rgb(251, 255, 0);
+              box-shadow: 0px 0px 30px rgba(204, 255, 0, 0.454);
+              border-radius: 5px;
+              width: 250px;
+              height: 250px;
+            }
+          }
+        }
+
+        .file-upload {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin: 20px 0;
+
+          .btn{
+            font-size: 20px;
+            background-color: rgb(163, 144, 0);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 20px 0;
+            box-shadow: 0px 0px 30px rgb(204, 255, 0);
+          }
+        }
+        .find-btn{
+          font-size: 20px;
+          background-color: rgb(163, 144, 0);
+          color: rgb(255, 255, 255);
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 1px solid rgb(255, 255, 255);
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin: 40px 0;
+          box-shadow: 0px 0px 30px rgb(204, 255, 0);
+        }
+      }
+    }
+  }
+  .footer{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, rgb(108, 97, 0), rgb(16, 16, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  
+    .footer-title{
+      font-size: 30px;
+      margin: 20px;
+    }
+  
+    .footer-subtitle{
+      text-align: center;
+    }
+  
+    .tushar{
+      margin: 20px;
+    }
+  
+    .link{
+      color: #ffffff;
+      font-size: 40px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  
+    .Copyright{
+      margin: 20px;
+    }
+  } 
+}
+
+@media screen and (orientation:landscape) {
+  .body{
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container-main {
+      background:linear-gradient(to top, rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800));
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+
+      .title {
+        color: white;
+        font-size: 50px;
+        margin-top: 20px;
+        text-shadow: 0px 0px 30px rgb(204, 255, 0);
+      
+      }
+      h1 ,p, h3{
+        color: white;
+        text-shadow: 0px 0px 30px rgb(204, 255, 0);
+      }
+
+      .main {
+        width: 60%;
+        height: 70%;
+        margin-top: 30px;
+        text-align: center;
+        border-radius: 5px;
+
+        .container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          gap: 10px;
+
+          .image-preview, .matched-meme {
+            width: 50%;
+            text-align: center;
+
+            img {
+              border: 1px solid rgb(251, 255, 0);
+              box-shadow: 0px 0px 30px rgba(204, 255, 0, 0.454);
+              border-radius: 5px;
+              width: 100%;
+              aspect-ratio: 1 / 1;
+            }
+          }
+        }
+
+        .file-upload {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin: 20px 0;
+
+          .btn{
+            font-size: 20px;
+            background-color: rgb(163, 144, 0);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 20px 0;
+            box-shadow: 0px 0px 30px rgb(204, 255, 0);
+          }
+        }
+        .find-btn{
+          font-size: 20px;
+          background-color: rgb(163, 144, 0);
+          color: rgb(255, 255, 255);
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: 1px solid rgb(255, 255, 255);
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin: 40px 0;
+          box-shadow: 0px 0px 30px rgb(204, 255, 0);
+        }
+      }
+    }
+  }
+  .footer{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to bottom, rgb(108, 97, 0), rgb(16, 16, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  
+    .footer-title{
+      font-size: 30px;
+      margin: 20px;
+    }
+  
+    .footer-subtitle{
+      text-align: center;
+    }
+  
+    .tushar{
+      margin: 20px;
+    }
+  
+    .link{
+      color: #ffffff;
+      font-size: 40px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  
+    .Copyright{
+      margin: 20px;
+    }
+  } 
+}
+
